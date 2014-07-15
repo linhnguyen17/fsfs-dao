@@ -31,7 +31,7 @@ import de.greenrobot.daogenerator.ToMany;
 public class ExampleDaoGenerator {
 
 	public static void main(String[] args) throws Exception {
-		Schema schema = new Schema(1000, "net.runsystem.dreamcometrue.bean");
+		Schema schema = new Schema(1000, "net.runsystem.dreamcometrue.bean");  // packeg 
 
 		// addNote(schema);
 		// addCustomerOrder(schema);
@@ -39,7 +39,7 @@ public class ExampleDaoGenerator {
 		// addTask(schema);
 		// addToDo(schema);
 		addUser(schema);
-		new DaoGenerator().generateAll(schema, "../DreamComeTrue/src-gen");
+		new DaoGenerator().generateAll(schema, "../DreamComeTrue/src");    // forder
 	}
 
 	private static void addCategory(Schema schema) {
